@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Header from "@/shared/ui/Header";
+import Footer from "@/shared/ui/Footer";
 
 export default function AutorLayout({
   children,
@@ -11,17 +11,15 @@ export default function AutorLayout({
     { name: "Inicio", path: "/" },
     { name: "Autores", path: "/autor" },
     { name: "Crear Autores", path: "/autor/crear" },
-    
   ];
 
   return (
     <div className="flex flex-col min-h-screen">
       <Header routes={routesAutor} />
       <main className="flex-grow">
-        {children}{" "}
-        {/* The current page will be rendered here (e.g., students/page.tsx). */}
-      <Footer/>
+        {children}
       </main>
+      <Footer />
     </div>
   );
 }

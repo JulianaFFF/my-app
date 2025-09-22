@@ -1,4 +1,3 @@
-"use client";
 import { Autor } from '../types/tipos';
 
 export const getAutores = async (): Promise<Autor[]> => {

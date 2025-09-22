@@ -3,8 +3,7 @@ import Footer from "@/components/Footer";
 
 export default function HomeLayout({ children }: { children: React.ReactNode }) {
   const routesHome = [
-    { name: "Inicio", path: "/" },
-    { name: "Autores", path: "/autor" },
+     { name: "Autores", path: "/autor" },
   ];
 
   return (

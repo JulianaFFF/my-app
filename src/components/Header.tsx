@@ -10,7 +10,7 @@ interface Route {
 
 const Header = ({routes}: {routes: Route[]}) => {
   return (
-    <header className="bg-blue-800 text-white p-4 shadow md">
+    <header className="bg-blue-200 text-gray-800 p-4 shadow md">
       <div className="container mx-auto flex justify-between items-center">
         {/* We use Link for the link to the home page */}
         <Link href="/" className="flex items-center space-x-2">
@@ -21,14 +21,15 @@ const Header = ({routes}: {routes: Route[]}) => {
             width={40}
             height={40}
           />
-          <span className="text-2xl font-semibold">Mi biblioteca</span>
+          <span className="text-2xl font-semibold text-white" style={{textShadow: '1px 1px 0 #6b7280, -1px -1px 0 #6b7280, 1px -1px 0 #6b7280, -1px 1px 0 #6b7280'}}>Mi biblioteca</span>
         </Link>
         <nav>
           {routes.map((route) => (
             <Link 
               key={route.path} 
               href={route.path} 
-              className="px-3 hover:text-gray-300"
+              className="px-3 hover:text-gray-300 text-white"
+              style={{textShadow: '1px 1px 0 #6b7280, -1px -1px 0 #6b7280, 1px -1px 0 #6b7280, -1px 1px 0 #6b7280'}}
             >
               {route.name}
             </Link>

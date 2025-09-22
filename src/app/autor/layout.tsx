@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default function AutorLayout({
   children,
@@ -19,6 +20,7 @@ export default function AutorLayout({
       <main className="flex-grow">
         {children}{" "}
         {/* The current page will be rendered here (e.g., students/page.tsx). */}
+      <Footer/>
       </main>
     </div>
   );

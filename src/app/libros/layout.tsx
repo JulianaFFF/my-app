@@ -9,7 +9,7 @@ const routes = [
   { name: "Libros", path: "/libros" },
 ];
 
-export default function AutorLayout({
+export default function BooksLayout({
   children,
 }: {
   children: React.ReactNode;

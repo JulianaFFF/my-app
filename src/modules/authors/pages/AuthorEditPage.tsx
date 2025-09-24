@@ -94,12 +94,6 @@ export default function AuthorEditPage({ authorId }: AuthorEditPageProps) {
         onSubmit={handleUpdateAuthor} 
         isSubmitting={isSubmitting}
         submitText="Actualizar Autor"
-        defaultValues={{
-          name: author.name,
-          description: author.description,
-          birthDate: author.birthDate,
-          image: author.image,
-        }}
       />
     </div>
   );

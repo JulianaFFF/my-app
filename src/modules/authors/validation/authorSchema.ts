@@ -21,6 +21,21 @@ export const authorSchema = z.object({
     .string()
     .min(1, { message: "La URL de la imagen es requerida." })
     .url({ message: "Debe ser una URL válida." }),
+
+  book: z.object({
+    name: z.string().min(1, "El nombre del libro es requerido"),
+    isbn: z.string().min(10, "El ISBN debe tener al menos 10 caracteres"),
+    image: z.string().url("Debe ser una URL válida para la imagen del libro"),
+    publishingDate: z.string().min(1, "La fecha de publicación es requerida"),
+    description: z.string().min(10, "La descripción del libro debe tener al menos 10 caracteres"),
+  }),
+
+  prize: z.object({
+    premiationDate: z.string().min(1, "La fecha de premiación es requerida"),
+    name: z.string().min(1, "El nombre del premio es requerido"),
+    description: z.string().min(10, "La descripción del premio debe tener al menos 10 caracteres"),
+    organizationId: z.number().min(1, "Debe seleccionar una organización"),
+  }),
 });
 
 export type AuthorFormData = z.infer<typeof authorSchema>;

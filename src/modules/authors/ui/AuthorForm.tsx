@@ -78,7 +78,7 @@ export default function AuthorForm({
               <input
                 {...register("name")}
                 type="text"
-                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black"
               />
               {errors.name && (
                 <p className="mt-1 text-sm text-red-600">{errors.name.message}</p>
@@ -92,7 +92,7 @@ export default function AuthorForm({
               <input
                 {...register("birthDate")}
                 type="date"
-                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black"
               />
               {errors.birthDate && (
                 <p className="mt-1 text-sm text-red-600">{errors.birthDate.message}</p>
@@ -106,7 +106,7 @@ export default function AuthorForm({
               <input
                 {...register("image")}
                 type="url"
-                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black"
               />
               {errors.image && (
                 <p className="mt-1 text-sm text-red-600">{errors.image.message}</p>
@@ -120,7 +120,7 @@ export default function AuthorForm({
               <textarea
                 {...register("description")}
                 rows={3}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black"
               />
               {errors.description && (
                 <p className="mt-1 text-sm text-red-600">{errors.description.message}</p>
@@ -140,7 +140,7 @@ export default function AuthorForm({
               <input
                 {...register("book.name")}
                 type="text"
-                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black"
               />
               {errors.book?.name && (
                 <p className="mt-1 text-sm text-red-600">{errors.book.name.message}</p>
@@ -154,7 +154,7 @@ export default function AuthorForm({
               <input
                 {...register("book.isbn")}
                 type="text"
-                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black"
               />
               {errors.book?.isbn && (
                 <p className="mt-1 text-sm text-red-600">{errors.book.isbn.message}</p>
@@ -168,7 +168,7 @@ export default function AuthorForm({
               <input
                 {...register("book.publishingDate")}
                 type="date"
-                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black"
               />
               {errors.book?.publishingDate && (
                 <p className="mt-1 text-sm text-red-600">{errors.book.publishingDate.message}</p>
@@ -182,7 +182,7 @@ export default function AuthorForm({
               <input
                 {...register("book.image")}
                 type="url"
-                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black"
               />
               {errors.book?.image && (
                 <p className="mt-1 text-sm text-red-600">{errors.book.image.message}</p>
@@ -196,7 +196,7 @@ export default function AuthorForm({
               <textarea
                 {...register("book.description")}
                 rows={3}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black"
               />
               {errors.book?.description && (
                 <p className="mt-1 text-sm text-red-600">{errors.book.description.message}</p>
@@ -216,7 +216,7 @@ export default function AuthorForm({
               <input
                 {...register("prize.name")}
                 type="text"
-                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black"
               />
               {errors.prize?.name && (
                 <p className="mt-1 text-sm text-red-600">{errors.prize.name.message}</p>
@@ -230,7 +230,7 @@ export default function AuthorForm({
               <input
                 {...register("prize.premiationDate")}
                 type="date"
-                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black"
               />
               {errors.prize?.premiationDate && (
                 <p className="mt-1 text-sm text-red-600">{errors.prize.premiationDate.message}</p>
@@ -243,7 +243,7 @@ export default function AuthorForm({
               </label>
               <select
                 {...register("prize.organizationId", { valueAsNumber: true })}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black"
               >
                 <option value="">Seleccionar organización</option>
                 {organizations.map((org) => (
@@ -264,7 +264,7 @@ export default function AuthorForm({
               <textarea
                 {...register("prize.description")}
                 rows={3}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-black"
               />
               {errors.prize?.description && (
                 <p className="mt-1 text-sm text-red-600">{errors.prize.description.message}</p>

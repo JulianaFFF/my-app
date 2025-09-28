@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - NEXT_PUBLIC_API_URL=http://backend:8080/api
+    depends_on:
+      - backend
+    networks:
+      - library-network
+
+  # Backend - Usando imagen bookstore
+  backend:
+    image: bookstore:latest
+    ports:
+      - "8080:8080"
+    networks:
+      - library-network
+
+  # Base de datos PostgreSQL
+  db:
+    image: postgres:15-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=library
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - library-network
+
+volumes:
+  postgres_data:
+
+networks:
+  library-network:
+    driver: bridge

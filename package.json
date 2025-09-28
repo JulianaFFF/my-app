@@ -6,7 +6,12 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "docker:build": "docker build -t library-frontend .",
+    "docker:run": "docker run -p 3000:3000 library-frontend",
+    "docker:up": "docker-compose up --build -d",
+    "docker:down": "docker-compose down",
+    "docker:logs": "docker-compose logs -f"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
